@@ -9,7 +9,7 @@ public class Query implements GraphQLQueryResolver {
 
 
     //"query" : "query {findAllBooks { title } }"
-    public Iterable<Book> findAllBooks() { // can be list?
+    public List<Book> findAllBooks() { // can be list?
 
         List<Book> books = new ArrayList<>();
 
