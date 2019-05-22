@@ -21,3 +21,8 @@ GraphQL is usually sent via HTTP to a single server endpoint
   
   
 - best resource: https://www.pluralsight.com/guides/building-a-graphql-server-with-spring-boot
+
+good for: need flexible interface that allows client to specify what data they need and client needs
+to query in a lot of different ways
+
+bad for: business process driven transactional system where the server side needs a lot of control
