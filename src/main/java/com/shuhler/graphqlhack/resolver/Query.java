@@ -13,8 +13,18 @@ public class Query implements GraphQLQueryResolver {
 
         List<Book> books = new ArrayList<>();
 
-        books.add(new Book("The Grapes of Wrath", "John Steinbeck"));
-        books.add(new Book("The Sun Also Rises", "Ernest Hemingway"));
+
+        Book grapesOfWrath = new Book("The Grapes of Wrath", "John Steinbeck");
+        grapesOfWrath.addGenre("Fiction");
+        grapesOfWrath.addGenre("Depressing");
+
+        Book sunAlsoRises = new Book("The Sun Also Rises", "Ernest Hemingway");
+        sunAlsoRises.addGenre("Fiction");
+        sunAlsoRises.addGenre("Everyone Is Drunk All The Time");
+
+        books.add(grapesOfWrath);
+        books.add(sunAlsoRises);
+
         return books;
     }
 
