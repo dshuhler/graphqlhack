@@ -4,6 +4,10 @@ type Book {
     genre: [String]
 }
 
-type Query {
+type Query { # this is a special type
     findAllBooks: [Book]!
+}
+
+type Mutation {
+    newBook(title: String!, author: String!) : Book!
 }

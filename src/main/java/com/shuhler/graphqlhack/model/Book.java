@@ -34,4 +34,13 @@ public class Book {
         this.genre.add(genre);
     }
 
+
+    @Override
+    public String toString() {
+        return "Book{" +
+            "title='" + title + '\'' +
+            ", author='" + author + '\'' +
+            ", genre=" + genre +
+            '}';
+    }
 }

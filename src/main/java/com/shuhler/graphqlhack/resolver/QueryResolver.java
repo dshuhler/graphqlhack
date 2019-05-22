@@ -5,7 +5,7 @@ import com.shuhler.graphqlhack.model.Book;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Query implements GraphQLQueryResolver {
+public class QueryResolver implements GraphQLQueryResolver {
 
 
     //"query" : "query {findAllBooks { title } }"

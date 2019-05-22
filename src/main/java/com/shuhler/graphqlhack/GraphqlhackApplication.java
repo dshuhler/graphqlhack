@@ -1,9 +1,7 @@
 package com.shuhler.graphqlhack;
 
-import com.shuhler.graphqlhack.resolver.Query;
-import graphql.Scalars;
-import graphql.schema.GraphQLObjectType;
-import graphql.schema.GraphQLSchema;
+import com.shuhler.graphqlhack.resolver.MutationResolver;
+import com.shuhler.graphqlhack.resolver.QueryResolver;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
@@ -16,8 +14,13 @@ public class GraphqlhackApplication {
 	}
 
 	@Bean
-	public Query query() {
-		return new Query();
+	public QueryResolver query() {
+		return new QueryResolver();
+	}
+
+	@Bean
+	public MutationResolver mutate() {
+		return new MutationResolver();
 	}
 
 //	@Bean
