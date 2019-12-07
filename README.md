@@ -1,6 +1,8 @@
 ### GraphQL hackathon
 
-
+Goals:
+  1. be able to give high level overview of GraphQL and why you would use it
+  1. set up a demo spring boot service that uses GraphQL
 
 GraphQL is usually sent via HTTP to a single server endpoint
   - use GET for queries
